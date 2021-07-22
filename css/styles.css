@@ -33,6 +33,20 @@ main {
   object-fit: contain;
 }
 
+.picked {
+  border: none;
+  box-shadow: inset 0px 0px 10px 4px rgba(255, 140, 0, 0.8), 
+             0px 0px 6px 4px rgba(255, 255, 255, 0.9), 
+             0px 0px 15px 10px rgba(255, 140, 0, 0.7);
+}
+
+.unpicked {
+  border: solid 2px #ddd;
+  background: #ddd;
+  filter: grayscale(100%);
+  transform: scale(0.9);
+}
+
 /* medium screen */
 @media (min-width: 520px) {
   .item {
