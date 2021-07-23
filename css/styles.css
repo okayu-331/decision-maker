@@ -52,10 +52,9 @@ section {
 
 #start-btn.disabled {
   background-color: #ccc;
-  transform: translate(0,4px);
+  transform: translate(0, 6px);
   box-shadow: none;
 }
-
 
 #items-container {
   max-width: 900px;
