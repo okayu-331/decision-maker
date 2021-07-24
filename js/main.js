@@ -9,6 +9,8 @@
   ];
   const startBtn = document.getElementById('start-btn');
   const itemsContainer = document.getElementById('items-container');
+  const resultContainer = document.getElementById('result-container');
+  const result = document.getElementById('result');
 
   startBtn.addEventListener('click', (e) => {
     if(e.target.className === 'disabled') {
@@ -19,10 +21,10 @@
     if (styledItems.length !== 0) {
       styledItems.forEach((item) => {
         item.className = 'item';
+        resultContainer.classList.remove('is-show');
       });
     }
 
-    startBtn.className = 'disabled';
     setTimeout(lottery, 2000);
   });
 
@@ -51,6 +53,8 @@
       }
     })
 
+    result.textContent = items[resultNum].result;
+    resultContainer.classList.add('is-show');
     startBtn.classList.remove('disabled');
   }
 

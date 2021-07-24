@@ -95,6 +95,14 @@ section {
 #result-container {
   padding: 2rem 0 6rem;
   background: linear-gradient(to right top, #f523a0, #db1946 , #ff468c, #ff8e4d);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .5s, visibility .5s ease-in-out 0s;
+}
+
+#result-container.is-show {
+  visibility: visible;
+  opacity: 1;
 }
 
 #result-container > p {
