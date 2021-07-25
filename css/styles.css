@@ -13,18 +13,18 @@ header {
   margin-top: 32px;
 }
 
+header p {
+  text-align: center;
+}
+
 header img {
-  margin: 0 auto;
+  margin: 1.6rem auto 0;
   width: 300px;
   display: block;
 }
 
-header h1 {
-  text-align: center;
-}
-
 section {
-  margin-top: 48px;
+  margin-top: 36px;
 }
 
 #start-btn {
@@ -54,6 +54,32 @@ section {
   background-color: #ccc;
   transform: translate(0, 6px);
   box-shadow: none;
+}
+
+#bar {
+  width: 80%;
+  max-width: 300px;
+  margin: 24px auto 0;
+  height: 10px;
+  border-radius: 4px;
+  position: relative;
+  background: #f33971;
+}
+
+#progress {
+  width: 0;
+  height: 100%;
+  background-color: #f33971;
+  border-radius: 4px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: width 1.8s linear 0s;
+}
+
+#progress.run {
+  width: 100%;
+  background: #ffb4cb;
 }
 
 #items-container {
@@ -130,7 +156,7 @@ section {
   }
 
   section {
-    margin-top: 72px;
+    margin-top: 60px;
   }
 }
 
