@@ -18,6 +18,7 @@
     "repeating-conic-gradient(#f523a0 0deg, #db1946  20deg, #f523a0  40deg)"
   ];
   const startBtn = document.getElementById('start-btn');
+  const progress = document.getElementById('progress');
   const itemsContainer = document.getElementById('items-container');
   const resultContainer = document.getElementById('result-container');
   const result = document.getElementById('result');
@@ -35,6 +36,7 @@
       });
     }
 
+    progress.classList.add('run');
     setTimeout(lottery, 2000);
   });
 
@@ -67,6 +69,7 @@
     resultContainer.style.background = colors[colorNum];
     resultContainer.classList.add('is-show');
     startBtn.classList.remove('disabled');
+    progress.classList.remove('run');
   }
 
   createItems();
