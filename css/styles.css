@@ -24,7 +24,7 @@ header img {
 }
 
 section {
-  margin-top: 36px;
+  margin-top: 24px;
 }
 
 #start-btn {
@@ -83,7 +83,7 @@ section {
 }
 
 .menu {
-  max-width: 900px;
+  max-width: 500px;
   padding: 0;
   margin: 0 auto;
   display: flex;
@@ -94,12 +94,14 @@ section {
 .menu li {
   display: inline-block;
   width: calc(90% / 2);
-  text-align: center;
   padding: 4px 0;
   margin: 0 4px;
+  font-size: 1.4rem;
+  text-align: center;
   color: #888;
   border-radius: 8px;
   background-color: #ddd;
+  cursor: pointer;
   position: relative;
 }
 
@@ -194,7 +196,7 @@ section {
   }
 
   section {
-    margin-top: 60px;
+    margin-top: 36px;
   }
 }
 
