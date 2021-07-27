@@ -1,6 +1,5 @@
+'use strict';
 {
-  'use strict';
-
   const allItems = {
     drinks: [
       {src: "img/drink_caramel.png", alt: "キャラメルドリンクの画像", result: "キャラメル"},
