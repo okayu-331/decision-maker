@@ -8,6 +8,12 @@
       {src: "img/drink_strawberry.png", alt: "ストロベリードリンクの画像", result: "ストロベリー"},
       {src: "img/drink_matcha.png", alt: "抹茶ドリンクの画像", result: "抹茶"},
     ],
+    coffee: [
+      {src: "img/coffee_blend.png", alt: "ホットコーヒーの画像", result: "ホットコーヒー"},
+      {src: "img/coffee_macchiato.png", alt: "カフェ・マキアートの画像", result: "カフェ・マキアート"},
+      {src: "img/coffee_iced_coffee.png", alt: "アイスコーヒーの画像", result: "アイスコーヒー"},
+      {src: "img/coffee_iced_latte.png", alt: "アイスカフェラテの画像", result: "アイスカフェラテ"},
+    ],
     foods: [
       {src: "img/food_carbonara.png", alt: "キャラメルドリンクの画像", result: "カルボナーラ"},
       {src: "img/food_meatsauce.png", alt: "チョコレートドリンクの画像", result: "ミートソース"},
