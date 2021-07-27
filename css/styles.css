@@ -45,6 +45,10 @@ section {
   box-shadow: 0 6px 0 #c0163e;
 }
 
+#start-btn:hover {
+  opacity: 0.9;
+}
+
 #start-btn:active {
   transform: translate(0, 6px);
   box-shadow: none;
@@ -98,16 +102,24 @@ section {
   margin: 0 4px;
   font-size: 1.4rem;
   text-align: center;
-  color: #888;
+  color: #555;
   border-radius: 8px;
   background-color: #ddd;
   cursor: pointer;
   position: relative;
 }
 
+.menu li:hover {
+  opacity: 0.8;
+}
+
 .menu li.active {
   color: #fff;
   background: #f33971;
+}
+
+.menu li.active:hover {
+  opacity: 0.9;
 }
 
 .menu > li.active::before {
@@ -187,6 +199,12 @@ section {
   margin: 0 auto;
   border: 1px solid #fff;
   font-size: 2.4rem;
+}
+
+footer {
+  padding: 24px 0;
+  color: #aaa;
+  text-align: center;
 }
 
 /* medium screen */
