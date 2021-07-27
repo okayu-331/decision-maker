@@ -24,7 +24,7 @@ header img {
 }
 
 section {
-  margin-top: 36px;
+  margin-top: 24px;
 }
 
 #start-btn {
@@ -82,9 +82,49 @@ section {
   background: #ffb4cb;
 }
 
+.menu {
+  max-width: 500px;
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.menu li {
+  display: inline-block;
+  width: calc(90% / 2);
+  padding: 4px 0;
+  margin: 0 4px;
+  font-size: 1.4rem;
+  text-align: center;
+  color: #888;
+  border-radius: 8px;
+  background-color: #ddd;
+  cursor: pointer;
+  position: relative;
+}
+
+.menu li.active {
+  color: #fff;
+  background: #f33971;
+}
+
+.menu > li.active::before {
+  content: '';
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  position: absolute;
+  top: 100%;
+  right: 50%;
+  transform: translateX(50%);
+  border-top-color: #f33971;
+}
+
 #items-container {
   max-width: 900px;
-  margin: 0 auto;
+  margin: 8px auto 0;
   display: flex;
   flex-wrap: wrap;
   list-style: none;
@@ -156,7 +196,7 @@ section {
   }
 
   section {
-    margin-top: 60px;
+    margin-top: 36px;
   }
 }
 
