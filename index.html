@@ -2,11 +2,40 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>decision maker</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>決断メーカー</title>
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  
+  <header>
+    <p>決められない、を代わりに決めます</p>
+    <img src="img/logo.png" alt="ロゴ画像">
+  </header>
+  <main>
+    <section>
+      <button id="start-btn">START!</button>
+      <div id="bar">
+        <div id="progress"></div>
+      </div>
+    </section>
+    <section>
+      <ul class="menu">
+        <li data-id="drinks" class="active">シェイクを選ぶ</li>
+        <li data-id="coffee">コーヒーを選ぶ</li>
+        <li data-id="foods">パスタを選ぶ</li>
+      </ul>
+      <ul id="items-container">
+      </ul>
+    </section>
+    <section id="result-container">
+      <p id="result-subtitle">決定！</p>
+      <p id="result"></p>
+    </section>
+  </main>
+  <footer>
+    (c) 2021 okayu-331
+  </footer>
   <script src="js/main.js"></script>
 </body>
 </html>
